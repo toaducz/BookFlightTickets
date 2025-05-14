@@ -242,10 +242,10 @@ if (isset($_COOKIE['Uname']) && isset($_COOKIE['Upwd'])) {
           $("label[for='" + me.attr('id') + "']").removeClass("animate-label");
         }
       });
-       $('#test-form').submit(function(e){
-   e.preventDefault() ;
-         alert("Thank you") ;
-       })
+      // $('#test-form').submit(function(e){
+      //   e.preventDefault() ;
+      //   alert("Thank you") ;
+      // })
     });
   </script>
 </main>
