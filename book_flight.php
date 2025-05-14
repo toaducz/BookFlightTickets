@@ -60,7 +60,8 @@ require 'helpers/init_conn_db.php';
           $passengers = $_POST['passengers'];
 
           if ($dep_city === $arr_city) {
-            header('Location: index.php?error=sameval');
+            // header('Location: index.php?error=sameval');
+            echo "<script>window.location.href = 'index.php?error=sameval';</script>";
             exit();
           }
           if ($dep_city === '0') {
